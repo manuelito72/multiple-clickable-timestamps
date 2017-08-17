@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><strong>Hello World!</strong><br>
+I need a code-template for a user-friendly solution:<br>
+I want to use clickable timestamps (buttons) to increase the accessibility<br>
+of long mp3-files (interviews for qualitative social-research purposes).<br>
+Which changes are necessary to make the example below work?</p>
+
+<p></p>
+<p><strong>Audio-File (mp3, 30:20):</strong><i>"Interview with Elizabeth Eubanks (oral history)"</i><br>https://ia801309.us.archive.org/5/items/eubanks_elizabeth_01/eubanks_elizabeth_01.mp3</p>
+
+<audio id="myAudio" controls>
+  <source src="https://ia801309.us.archive.org/5/items/eubanks_elizabeth_01/eubanks_elizabeth_01.mp3" type="audio/mpeg">
+</audio>
+
+<p></p>
+<button onclick="getCurTime()" type="button">Get current time position</button><br>
+<button onclick="setCurTime()" type="button">Set time position to 5 seconds</button><br> 
+<button onclick="setCurTime()" type="button">Set time position to 03:30 minutes</button><br>
+<button onclick="setCurTime()" type="button">Set time position to 11:05 minutes</button><br>
+
+<script>
+var aud = document.getElementById("myAudio");
+
+function getCurTime() { 
+    alert(aud.currentTime);
+} 
+
+function setCurTime() { 
+    aud.currentTime=5;
+} 
+
+var y = document.getElementById("myAudio");
+
+function getCurTime() { 
+    alert(y.currentTime);
+} 
+
+function setCurTime() { 
+    y.currentTime=210;
+} 
+
+var x = document.getElementById("myAudio");
+
+function getCurTime() { 
+    alert(x.currentTime);
+} 
+
+function setCurTime() { 
+    x.currentTime = 665;
+} 
+</script>
+
+</body>
+</html>
